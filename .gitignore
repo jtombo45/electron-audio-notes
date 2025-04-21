@@ -1,0 +1,17 @@
+# Node modules and build artifacts
+node_modules/
+dist/
+
+# Logs
+*.log
+
+# macOS specific files
+.DS_Store
+
+# Build or dependency locks
+package-lock.json
+yarn.lock
+
+# Temp files and caches
+tmp/
+.cache/

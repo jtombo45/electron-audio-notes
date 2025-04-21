@@ -1,0 +1,21 @@
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "description": "A simple Electron app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^33.0.1",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "@google-cloud/language": "^6.5.0",
+    "@google-cloud/speech": "^6.7.0",
+    "@google-cloud/storage": "^7.13.0",
+    "mic": "^2.1.2"
+  }
+}

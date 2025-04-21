@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electron AudioWorklet Example</title>
+</head>
+<body>
+  <h1>AudioWorklet in Electron</h1>
+  <button id="start">Start AudioWorklet</button>
+  <button id="stop">Stop AudioWorklet</button>
+  <button id="transcribe">Transcribe Audio</button>
+
+  <!-- Section to display transcription -->
+  <div id="loading-spinner" style="display: none;">Loading...</div>
+  <h2>Transcription Result:</h2>
+  <div id="transcription-result">Transcription will appear here...</div>
+  <div id="meeting-summary">Meeting summary will appear here...</div>
+
+
+  <script src="./renderer.js"></script>
+</body>
+</html>
