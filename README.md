@@ -1,39 +1,18 @@
-# Audio Notes
+# Running the Audio Notes App Locally
 
-An electron desktop application that takes team meeting's audio into a structured note using Google text-to-speech service, BlackHole and Vertex AI (Bard/PaLM 2).
+**Audio Notes** is an Electron desktop app I built as a proof of concept to solve a friction point in my work life: too many meetings across different topics, with no easy way to summarize or keep track of them. I wanted a tool that could turn audio from meetings into clean, AI-generated meeting minutes — while keeping everything local and private, similar to how Obsidian works. Feel free to reach out if you want to collaborate and add additional features. 
 
-# Technologies Used
+The app uses:
 
-- Electron
-- BlackHole
-- Google Speech-To-Text API
-- Vertex AI (Bard/PaLM 2)
+- **Google Speech-to-Text API** (for transcribing audio)  
+- **BlackHole** (to route system audio)  
+- **Vertex AI (PaLM 2 / Bard)** (to generate structured notes)  
+- **Electron** (for the desktop interface)
 
-# Dependencies
+## To Run Locally
 
-- Checkout the Dependencies.MD
-
-# Debugging
-
-- How to debug Electron JS in VS Code: https://www.youtube.com/watch?v=-bjl401p5r8
-- Link: https://github.com/Microsoft/vscode-recipes/tree/master/Electron (config varies on different OS)
-
-## Electron
-
-Electron uses web technologies that are rendered using a version of the Chromium browser engine and a back end using the Node.js runtime environment
-
-- Link: https://www.electronjs.org/
-
-## BlackHole
-
-BlackHole is a modern macOS audio loopback driver that allows applications to pass audio to other applications with zero additional latency.
-
-- Link: https://github.com/ExistentialAudio/BlackHole?tab=readme-ov-file
-
-## Google Google Speech-To-Text API
-
-Converts audio into text
-
-## Vertex AI (Bard/PaLM 2)
-
-An AI chatbot and LLM used to for various tasks such answering questions to generating content.
+1. Clone the repo and install dependencies with `npm install`.
+2. Check the `/Doc` folder for setup steps (API keys, config files, etc.).
+3. Install **BlackHole** for local audio capture.
+4. Make sure you have access to **Google Speech-to-Text API** and **Vertex AI**.
+5. Run the app using `npm start` or `npm run dev`.
